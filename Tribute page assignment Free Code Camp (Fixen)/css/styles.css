@@ -1,0 +1,28 @@
+.row {
+  background-color: #eee;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+ul {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+cite {
+  color: #333;
+}
+
+cite:before {
+  content: "--- ";
+}
