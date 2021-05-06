@@ -6,8 +6,11 @@
   box-sizing: border-box;
 }
 
+/* Mobile first */
+
 body {
   font-family: Lato, Arial, Helvetica, sans-serif;
+  background-color: #eee;
 }
 
 .container {
@@ -80,8 +83,10 @@ h1 {
   font-size: 1.5rem;
 }
 
-h2 {
+#benefits h2 {
   font-weight: 700;
+  border: 1px solid purple;
+  width: 100%;
 }
 
 /* Video */
@@ -94,7 +99,11 @@ h2 {
 /* Font awesome */
 .fa {
   color: darkorange;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
+  border: 1px solid red;
+  margin-right: 24px;
+  display: none;
+  width: 65px;
 }
 
 .fa-3x {
@@ -109,10 +118,50 @@ h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 48px 0;
 }
 
 #benefits div {
   border: 1px solid red;
   width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#benefits div div {
+  border: 3px solid yellow;
+  width: 90%;
+  text-align: center;
+  margin: 16px auto;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: red;
+  }
+
+  .fa {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+  }
+
+  #benefits div div {
+    border: 3px solid yellow;
+    width: 80%;
+    margin: 16px 0;
+    text-align: left;
+  }
+
+  #benefits div {
+    border: 1px solid red;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  
+
 }
