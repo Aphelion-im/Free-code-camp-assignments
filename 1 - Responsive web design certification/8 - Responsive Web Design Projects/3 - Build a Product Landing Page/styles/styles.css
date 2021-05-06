@@ -1,0 +1,88 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#header {
+  border: 1px solid red;
+  background-color: silver;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#header-img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Navigation */
+#nav-bar {
+  width: 45%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+
+#nav-bar a {
+  text-decoration: none;
+}
+
+/* Form */
+#submit {
+  padding: 4px 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: yellow;
+}
+
+/* Hero section */
+#hero {
+  border: 1px solid red;
+  background-color: silver;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+}
+
+#hero form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  height: 80px;
+}
+
+#hero h1 {
+  font-weight: 700;
+  border: 1px solid red;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+/* Video */
+#video {
+  display: flex;
+  justify-content: center;
+  margin: 48px 0;
+}
