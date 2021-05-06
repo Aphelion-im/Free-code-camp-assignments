@@ -102,3 +102,17 @@ h2 {
   font-weight: 900;
 }
 
+/* Benefits section */
+#benefits {
+  border: 5px solid green;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0;
+}
+
+#benefits div {
+  border: 1px solid red;
+  width: 70%;
+}
