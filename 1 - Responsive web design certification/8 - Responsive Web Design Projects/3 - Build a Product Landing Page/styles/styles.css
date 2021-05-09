@@ -26,7 +26,7 @@ body {
 
 h1 {
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   font-size: 1.5rem;
 }
 
@@ -63,9 +63,11 @@ h1 {
 /* Form */
 #submit {
   padding: 4px 8px;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   background-color: yellow;
+  font-size: 1rem;
+  margin: 16px 0;
 }
 
 /* Hero section */
@@ -90,13 +92,24 @@ h1 {
   padding: 8px;
 }
 
-#benefits h2 {
+#hero #submit {
+  background-color: #f1c40f;
+  border: none;
+  font-size: 700;
+  cursor: pointer;
+}
+
+#hero #submit:hover {
+  background-color: orange;
+}
+
+#features h2 {
   font-weight: 700;
   width: 100%;
 }
 
-/* Video */
-#video {
+/* howitworks */
+#howitworks {
   display: flex;
   justify-content: center;
   margin: 48px 0;
@@ -116,15 +129,15 @@ h1 {
   font-weight: 900;
 }
 
-/* Benefits section */
-#benefits {
+/* features section */
+#features {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-#benefits div {
+#features div {
   width: 70%;
   display: flex;
   flex-direction: row;
@@ -132,52 +145,53 @@ h1 {
   justify-content: center;
 }
 
-#benefits div div {
+#features div div {
   width: 90%;
   text-align: center;
   margin: 16px auto;
 }
 
-#benefits div div p {
+#features div div p {
   width: 100%;
 }
 
-#video {
+#howitworks {
   margin: 0 auto;
 }
 
-/* Cards */
-#cards {
+/* pricing */
+#pricing {
   display: flex;
   flex-direction: column;
   width: 70%;
+  justify-content: center;
 }
 
-#cards .card {
+#pricing .card {
   border: 1px solid black;
   border-radius: 4px;
   text-align: center;
-  margin-bottom: 16px;
+  margin: 16px;
 }
 
-#cards .card .header {
+#pricing .card .header {
   background-color: var(--silverBackground);
   font-weight: 700;
   text-transform: uppercase;
-  padding: 8px;
+  padding: 16px;
 }
 
-#cards .price {
+#pricing .price {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 8px 0 24px 0;
 }
 
-#cards p {
+#pricing p {
   margin: 4px 0 16px 0;
 }
 
-#cards .selectButton {
+#pricing .selectButton {
   background-color: #f1c40f;
   border-radius: 4px;
   border: none;
@@ -189,7 +203,7 @@ h1 {
   transition: background-color 250ms ease;
 }
 
-#cards .selectButton:hover {
+#pricing .selectButton:hover {
   background-color: orange;
 }
 
@@ -200,16 +214,24 @@ h1 {
     justify-content: center;
   }
 
-  #benefits div div {
+  #features div div {
     width: 80%;
     margin: 16px 0;
     text-align: left;
   }
 
-  #benefits div {
+  #features div {
     width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  #pricing {
+    flex-direction: row;
+  }
+
+  #pricing .card {
+    flex: 1;
   }
 }
