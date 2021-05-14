@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,32 +7,50 @@
 }
 
 /* Mobile first */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Lato, sans-serif;
+}
 
+#navbar {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+}
 
+#navbar h1 {
+  font-size: 1.75rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 32px;
+  text-align: center;
+  background-color: #fff;
+}
 
+#navbar a {
+  text-decoration: none;
+  color: #333;
+  padding: 16px 0 16px 32px;
+  border-top: 1px solid black;
+}
 
+#main-doc {
+  width: 100%;
+  border: 1px solid red;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#main-doc h2 {
+  font-size: 1.5rem;
+}
 
 /* Media Queries */
 @media screen and (min-width: 600px) {
-  
   body {
-  background-color: silver;
+    background-color: silver;
   }
-
-
 }
