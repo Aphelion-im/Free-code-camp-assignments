@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+:root {
+  --darkgrey1: #555;
+}
+
 *,
 *::before,
 *::after {
@@ -8,6 +12,7 @@
 
 /* Mobile first */
 body {
+  color: var(--darkgrey1);
   display: flex;
   flex-direction: column;
   font-family: Lato, sans-serif;
@@ -16,14 +21,13 @@ body {
 #navbar {
   display: flex;
   flex-direction: column;
-  border: 1px solid #333;
+  border: 1px solid var(--darkgrey1);
   height: 300px;
-  overflow-y: auto;
-  overflow-x: hidden;
   background-color: #fff;
 }
 
 #navbar h1 {
+  color: #000;
   font-size: 1.75rem;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -32,20 +36,56 @@ body {
   background-color: #fff;
 }
 
-#navbar a {
-  text-decoration: none;
-  color: #333;
-  padding: 16px 0 16px 32px;
-  border-top: 1px solid black;
+#navbar ul {
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
+#navbar li {
+  padding: 16px 0 16px 32px;
+  border-top: 1px solid black;
+  cursor: pointer;
+}
+
+#navbar li:hover {
+  background-color: silver;
+}
+
+#navbar li:hover a {
+  color: #000;
+}
+
+#navbar a {
+  color: var(--darkgrey1);
+  text-decoration: none;
+}
+
+/* Main document */
 #main-doc {
   width: 100%;
-  border: 1px solid red;
+  padding: 24px;
 }
 
 #main-doc h2 {
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 1.75rem;
+  margin: 16px 0 8px 0;
+}
+
+#main-doc p {
+  padding: 8px;
+  line-height: 1.5rem;
+  margin: 8px 0;
+}
+
+#main-doc ul {
+  padding: 0 32px;
+}
+
+#main-doc ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 16px 0;
 }
 
 /* Media Queries */
